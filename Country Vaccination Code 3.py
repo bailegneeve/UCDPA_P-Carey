@@ -17,7 +17,7 @@ vacc_amount = vacc_amount.iloc[:10]
 
 vacc_amount = vacc_amount.sort_values('total_vaccinations_per_hundred', ascending=False)
 
-plt.figure(figsize=(8, 11))
+plt.figure(figsize=(8, 12))
 sns.barplot(vacc_amount.index, vacc_amount.total_vaccinations_per_hundred, color = 'g')
 plt.ylabel('Number of vaccinated people per hundred')
 plt.xlabel('Countries')
