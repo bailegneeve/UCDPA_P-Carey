@@ -4,18 +4,15 @@ import numpy as np
 
 vac = pd.read_csv(r"country_vaccinations.csv")
 
-
+print(vac.columns)
 print(vac.head())
 print(vac.info())
 vac.fillna(value=0, inplace=True)
 print(vac.isnull().sum())
 
 
-plt.figure(figsize=(12, 7))
-order_data = vac.groupby("country").total_vaccinations_per_hundred.agg("max").sort_values(ascending = False)
-order_data[order_data> 20].plot(kind = "bar")
-plt.ylabel("No of people per Hundred()")
-plt.title("Country")
-plt.show()
+
+
+
 
 
