@@ -13,7 +13,7 @@ vac.fillna(value=0, inplace=True)
 
 cols = ['country', 'total_vaccinations', 'iso_code', 'vaccines','total_vaccinations_per_hundred']
 vacc_amount = vac[cols].groupby('country').max().sort_values('total_vaccinations_per_hundred', ascending=False).dropna(subset=['total_vaccinations_per_hundred'])
-vacc_amount = vacc_amount.iloc[:9]
+vacc_amount = vacc_amount.iloc[:10]
 
 vacc_amount = vacc_amount.sort_values('total_vaccinations_per_hundred', ascending=False)
 
