@@ -8,6 +8,8 @@ print(vac.columns)
 print(vac.head)
 print(vac.info)
 vac.fillna(value=0, inplace=True)
+vac.dropna()
+
 print(vac.isnull().sum())
 
 
