@@ -17,7 +17,7 @@ order by reach desc"""))
 
 plt.figure(figsize=(12, 7))
 order_data = vac.groupby("country").total_vaccinations.agg("max").sort_values(ascending = False)
-order_data[order_data> 20].plot(kind = "bar")
+order_data[order_data> 1300000].plot(kind = "bar")
 plt.ylabel("No of people vaccinated()")
 plt.title("Country")
 plt.show()
