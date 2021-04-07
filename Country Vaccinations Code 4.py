@@ -9,7 +9,7 @@ vac.fillna(value=0, inplace=True)
 
 for index in range(len(countries)):print('countries:', countries[index])
 
-plt.figure(figsize=(12, 7))
+plt.figure(figsize=(12, 8))
 order_data = vac.groupby("country").total_vaccinations.agg("max").sort_values(ascending = False)
 order_data.plot(kind = "bar")
 plt.ylabel("No of people Vaccinated()")
