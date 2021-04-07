@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from pandasql import sqldf
-vac = pd.read_csv(r"/Users/pc/Downloads/country_vaccinations.csv")
-vac.to_csv("country_vaccinations.csv")
+vac = pd.read_csv(r"country_vaccinations.csv")
+
 
 print(vac.head())
 print(vac.info())
